@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Perguntas sobre Brusque</title>
+
+    <link rel="stylesheet" href="Curricularização.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TELA INICIAL -->
+
+        <div id="start-screen" class="screen start-screen active">
+
+            <div class="top-box">
+                <h1>15 Perguntas sobre Brusque</h1>
+
+                <p>
+                    Você é Brusquense de Verdade ou de Mentira
+                </p>
+            </div>
+
+            <!-- FORMULÁRIO -->
+
+            <div class="form-box">
+
+                <div class="form-group">
+                    <label>Escola:</label>
+
+                    <input type="text" placeholder="Insira sua Escola">
+                </div>
+
+                <div class="form-group">
+                    <label>Nome:</label>
+
+                    <input type="text" placeholder="Insira seu Nome">
+                </div>
+
+                <div class="form-group">
+                    <label>Idade:</label>
+
+                    <input type="text" placeholder="Insira sua Idade">
+                </div>
+
+            </div>
+
+            <!-- BOTÃO -->
+
+            <button class="start-btn" onclick="startQuiz()">
+                Iniciar
+            </button>
+
+        </div>
+
+        <!-- TELA DO QUIZ -->
+
+        <div id="quiz-screen" class="screen quiz-screen">
+
+            <!-- IMAGEM DA PERGUNTA -->
+            <img
+                id="question-image"
+                class="question-image"
+                src=""
+                alt="Imagem da pergunta"
+            >
+
+            <!-- PERGUNTA -->
+            <h1 id="question-title" class="question-title">
+                Pergunta
+            </h1>
+
+            <!-- RESPOSTAS -->
+            <div id="answers" class="answers"></div>
+
+        </div>
+
+        <!-- TELA DE FEEDBACK -->
+
+        <div id="feedback-screen" class="screen feedback-screen">
+
+            <!-- IMAGEM DE ACERTO/ERRO -->
+            <img
+                id="feedback-image"
+                class="feedback-image"
+                src=""
+                alt="Feedback"
+            >
+
+            <!-- TEXTO -->
+            <p id="feedback-text" class="feedback-text"></p>
+
+            <!-- BOTÃO -->
+            <button
+                class="next-btn"
+                onclick="nextQuestion()"
+            >
+                Próxima
+            </button>
+
+        </div>
+
+        <!-- TELA FINAL -->
+
+        <div id="final-screen" class="screen final-screen">
+
+            <!-- IMAGEM FINAL -->
+            <img
+                id="final-image"
+                class="final-image"
+                src="inicio.jpg.jpeg"
+                alt="Imagem Final"
+            >
+
+            <!-- TÍTULO -->
+            <h1 id="final-title" class="final-title"></h1>
+
+            <!-- TEXTO -->
+            <p id="final-text" class="final-text"></p>
+
+            <!-- BOTÃO -->
+            <button
+                class="restart-btn"
+                onclick="restartQuiz()"
+            >
+                Jogar Novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="Curricularização.js"></script>
+
+</body>
+
+</html>
